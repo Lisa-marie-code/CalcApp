@@ -4,24 +4,14 @@ font-weight: 700;
 font-size: 20px;
 }
 .calcbox{
-    width:30% ;
+    width:400px; 
     background-color:#252d44;
-    margin: 40px auto 0 auto;
+    margin: 20px auto 0 auto;
     padding-bottom: 20px;
+    position: relative;
+    
 }
 
-@media only screen and (max-width: 600px) {
-.calcbox{
-    width:max-content;
-    height:100% ;
-}
-}
-
-@media only screen and (min-width: 600px){
-    .calcbox{
-        width: max-content;
-    }
-}
 
 .wrapper{
     display: grid;
@@ -30,7 +20,7 @@ font-size: 20px;
     width: 80%;
     margin: auto;
     padding-top: 25%;
-   
+    position: static;
 }
 
 .wrapper > div{
@@ -44,13 +34,18 @@ font-size: 20px;
 
 #display{
     grid-column: 1/5; 
-    height: 15px;
+    height: 40px;
     text-align: right;
     background:#181f32 ;
     color: #fff;
+    word-wrap: break-word;
+    word-break: break-all;
+    
 }
 
-
+.boxNum, .boxOpera{
+    cursor: pointer;
+}
 #box10{
     grid-column: 1/3;
     background:#64748e ;
@@ -70,7 +65,7 @@ font-size: 20px;
     text-align: center;
 }
 
-/* #click:hover{
+#click:hover{
  background-color: rgb(171, 106, 245);
 }
 #equal:hover{
@@ -84,4 +79,5 @@ font-size: 20px;
 #box10:hover{
     background-color: rgb(171, 106, 245);
 
-} */
+} 
+
