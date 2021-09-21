@@ -3,53 +3,70 @@ font-family: 'Spartan', sans-serif;
 font-weight: 700;
 font-size: 20px;
 }
+   
+.cover{
+    background-color: hsl(224, 28%, 35%);
+    height: 600px;
+    margin: 0 auto 0 auto;
+    padding: 50px;
+    padding-bottom: 100px;
+}
 .calcbox{
-    width:400px; 
+    width:450px; 
     background-color:#252d44;
     margin: 20px auto 0 auto;
-    padding-bottom: 20px;
-    position: relative;
-    
+    border-radius: 10px;  
 }
 
 
+#display{
+    width: 430px;
+    margin: 80px auto 0 auto;
+    padding: 50px 10px;
+    border-radius: 10px;
+    background:#181f32 ;
+    color: #fff;
+    text-align: right;
+    font-size: 30px;
+    word-wrap: break-word;
+    word-break: break-all;
+}
 .wrapper{
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 1em;
     width: 80%;
     margin: auto;
-    padding-top: 25%;
-    position: static;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .wrapper > div{
     background: #eee;
-    padding: 0.8em;
-    border-radius: 5%;
     box-shadow:hsl(224, 28%, 35%);
     color: hsl(221, 14%, 31%) ;
     text-align: center;
 }
 
-#display{
-    grid-column: 1/5; 
-    height: 40px;
-    text-align: right;
-    background:#181f32 ;
-    color: #fff;
-    word-wrap: break-word;
-    word-break: break-all;
-    
-}
 
-.boxNum, .boxOpera{
+button{
     cursor: pointer;
+    border-radius: 5px;
+    height: 50px;
+    border-style: none; 
+}
+.boxNum{
+    box-shadow: 0 5px #b4a597;
+}
+.boxOpera{
+    box-shadow: 0 5px #b4a597;
 }
 #box10{
     grid-column: 1/3;
     background:#64748e ;
     color: #fff;
+    height: 40px;
+    box-shadow: 0 5px #364050;
 }
 
 #equal{
@@ -57,27 +74,16 @@ font-size: 20px;
     background-color: rgb(187, 50, 50);
     color: #fff; 
     text-align: center;
+    height: 40px;
+    box-shadow: 0 5px rgb(126, 33, 33) ;
+
 }
 
 #box5{
     background:#64748e ;
     color: #fff;
     text-align: center;
+    box-shadow: 0 5px #364050;
 }
 
-#click:hover{
- background-color: rgb(171, 106, 245);
-}
-#equal:hover{
-    background-color: rgb(171, 106, 245);
-
-}
-#box5:hover{
-    background-color: rgb(171, 106, 245);
-
-}
-#box10:hover{
-    background-color: rgb(171, 106, 245);
-
-} 
 

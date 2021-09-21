@@ -1,11 +1,11 @@
-let display = document.getElementById("display");
-let operation = document.getElementsByClassName("boxOpera")
-let number = document.getElementsByClassName("boxNum")
 
 
+const display = document.getElementById('display')
+const operationButtons = document.getElementsByClassName('boxOpera')
+const numberButton = document.getElementsByClassName('boxNum')
 
 
-const operationKey = Array.from(document.getElementsByClassName("boxOpera"));
+const operationKey = Array.from(document.getElementsByClassName('boxOpera'));
 
 operationKey.map(boxOpera => {
     boxOpera.addEventListener('click', (e) => {
@@ -39,10 +39,9 @@ key.map( boxNum => {
     boxNum.addEventListener('click', (e) => {
         switch(e.target.innerText){
             case '.':
-                if(display.innerText === '.' && display.innerText.includes('.')){
-                    display.innerText = ''; 
+                if (display.innerText === '.' && display.innerText.includes('.')){
+                    display.innerText = display.innerText = e.target.innerText;
                 }
-                break;
 
             default:
                 display.innerText += e.target.innerText;
@@ -51,4 +50,4 @@ key.map( boxNum => {
 
         }
     });
-});
+})
