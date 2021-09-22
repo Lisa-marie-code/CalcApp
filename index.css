@@ -2,9 +2,61 @@
 font-family: 'Spartan', sans-serif;
 font-weight: 700;
 font-size: 20px;
-background:hsl(222, 26%, 31%);
 }
-   
+
+header {
+    position: relative;
+    width: 430px;
+    margin: 10px auto 0 auto;
+   }
+
+   .toggle {
+      position: absolute;
+      right: 0;
+      top: 0; 
+    }
+   .switch {
+        position: relative;
+        display: inline-block;
+        width: 40px;
+        height: 20px; 
+  }
+   .switch input {
+          opacity: 0;
+          width: 0;
+          height: 0; 
+  }
+   .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s; }
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 15px;
+      width: 15px;
+      left: 4px;
+      bottom: 3px;
+      background-color: white;
+      -webkit-transition: .4s;
+      transition: .4s; }
+   .switch input:checked + .slider {
+    background-color: #232c43; }
+  .switch input:focus + .slider {
+    box-shadow: 0 0 1px #232c43; }
+   .switch input:checked + .slider:before {
+    transform: translateX(18px); }
+   .switch .slider.round {
+    border-radius: 34px; }
+     .switch .slider.round:before {
+      border-radius: 50%; }
+
 .cover{
     background-color: hsl(224, 28%, 35%);
     height: 600px;
@@ -12,6 +64,7 @@ background:hsl(222, 26%, 31%);
     padding: 50px;
     padding-bottom: 100px;
 }
+
 .calcbox{
     width:450px; 
     background-color:#252d44;
@@ -22,7 +75,7 @@ background:hsl(222, 26%, 31%);
 
 #display{
     width: 430px;
-    margin: 80px auto 0 auto;
+    margin: 10px auto 0 auto;
     padding: 50px 10px;
     border-radius: 10px;
     background:#181f32 ;
@@ -87,3 +140,38 @@ button{
     box-shadow: 0 5px #364050;
 }
 
+/* mobileview */
+@media only screen and (max-width:375px){
+    #display{
+        padding: 30px 20px;
+        font-size: 32px;
+        font-weight: 700;
+        text-align: right;
+        border-radius: 10px;
+        margin-bottom: 20px; 
+        background-color:hsl(223, 31%, 20%);
+        width: 85%;
+        margin: auto;
+    }
+
+    .wrapper{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: .8em;
+        width: 80%;
+        margin: 20px auto 0 auto;
+    }
+    .calcbox{
+        width:100% ;
+        background-color:#252d44;
+        margin: auto;
+        border-radius:10px;
+    }
+    
+    header {
+        position: relative;
+        width: 90%;
+        margin: 10px auto 0 auto;
+       }
+    
+}
