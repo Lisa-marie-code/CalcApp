@@ -2,10 +2,12 @@
 font-family: 'Spartan', sans-serif;
 font-weight: 700;
 font-size: 20px;
+background:hsl(222, 26%, 31%);
 }
 .calcbox{
     width:30% ;
     background-color:#252d44;
+    /* background: hsl(224, 36%, 15%); */
     margin: 40px auto 0 auto;
     padding-bottom: 20px;
 }
@@ -27,9 +29,10 @@ font-size: 20px;
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 1em;
-    width: 80%;
+    width: 90%;
     margin: auto;
-    padding-top: 25%;
+    padding-top: 15%;
+    background: hsl(223, 31%, 20%);
    
 }
 
@@ -46,9 +49,10 @@ font-size: 20px;
     grid-column: 1/5; 
     height: 15px;
     text-align: right;
-    background:#181f32 ;
+    background:hsl(224, 36%, 15%);
     color: #fff;
 }
+
 
 
 #box10{
