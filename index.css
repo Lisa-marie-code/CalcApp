@@ -4,60 +4,70 @@ font-weight: 700;
 font-size: 20px;
 background:hsl(222, 26%, 31%);
 }
+   
+.cover{
+    background-color: hsl(224, 28%, 35%);
+    height: 600px;
+    margin: 0 auto 0 auto;
+    padding: 50px;
+    padding-bottom: 100px;
+}
 .calcbox{
-    width:30% ;
+    width:450px; 
     background-color:#252d44;
-    margin: 40px auto 0 auto;
-    padding-bottom: 20px;
+    margin: 20px auto 0 auto;
+    border-radius: 10px;  
 }
 
-@media only screen and (max-width: 600px) {
-.calcbox{
-    width:max-content;
-    height:100% ;
-}
-}
 
-@media only screen and (min-width: 600px){
-    .calcbox{
-        width: max-content;
-    }
+#display{
+    width: 430px;
+    margin: 80px auto 0 auto;
+    padding: 50px 10px;
+    border-radius: 10px;
+    background:#181f32 ;
+    color: #fff;
+    text-align: right;
+    font-size: 30px;
+    word-wrap: break-word;
+    word-break: break-all;
 }
-
 .wrapper{
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 1em;
     width: 90%;
     margin: auto;
-    padding-top: 15%;
-    background: hsl(223, 31%, 20%);
-   
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .wrapper > div{
     background: #eee;
-    padding: 0.8em;
-    border-radius: 5%;
     box-shadow:hsl(224, 28%, 35%);
     color: hsl(221, 14%, 31%) ;
     text-align: center;
 }
 
-#display{
-    grid-column: 1/5; 
-    height: 15px;
-    text-align: right;
-    background:hsl(224, 36%, 15%);
-    color: #fff;
+
+button{
+    cursor: pointer;
+    border-radius: 5px;
+    height: 50px;
+    border-style: none; 
 }
-
-
-
+.boxNum{
+    box-shadow: 0 5px #b4a597;
+}
+.boxOpera{
+    box-shadow: 0 5px #b4a597;
+}
 #box10{
     grid-column: 1/3;
     background:#64748e ;
     color: #fff;
+    height: 40px;
+    box-shadow: 0 5px #364050;
 }
 
 #equal{
@@ -65,11 +75,15 @@ background:hsl(222, 26%, 31%);
     background-color: rgb(187, 50, 50);
     color: #fff; 
     text-align: center;
+    height: 40px;
+    box-shadow: 0 5px rgb(126, 33, 33) ;
+
 }
 
 #box5{
     background:#64748e ;
     color: #fff;
     text-align: center;
+    box-shadow: 0 5px #364050;
 }
 
