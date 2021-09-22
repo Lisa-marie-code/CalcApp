@@ -7,7 +7,6 @@ background:hsl(222, 26%, 31%);
 .calcbox{
     width:30% ;
     background-color:#252d44;
-    /* background: hsl(224, 36%, 15%); */
     margin: 40px auto 0 auto;
     padding-bottom: 20px;
 }
@@ -74,18 +73,3 @@ background:hsl(222, 26%, 31%);
     text-align: center;
 }
 
-/* #click:hover{
- background-color: rgb(171, 106, 245);
-}
-#equal:hover{
-    background-color: rgb(171, 106, 245);
-
-}
-#box5:hover{
-    background-color: rgb(171, 106, 245);
-
-}
-#box10:hover{
-    background-color: rgb(171, 106, 245);
-
-} */
